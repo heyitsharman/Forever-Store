@@ -53,14 +53,14 @@ const Navbar = () => {
 
       <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full': 'w-0'}`}>
         <div className='flex flex-col text-gray-600'>
-          <div onClick={()=>setVisible(false)}className='flex items-center gap-4 p-3 cursor-pointer'>
+          <div onClick={()=>setVisible(false)} className='flex items-center gap-4 p-3 cursor-pointer'>
             <img src={assets.dropdown_icon} alt="" className='h- rotate-180'/>
             <p >Back</p>
           </div>
-          <NavLink className='py-2 pl-6 border' to='/'>Home</NavLink>
-          <NavLink className='py-2 pl-6 border' to='/collection'>Collection</NavLink>
-          <NavLink className='py-2 pl-6 border' to='/about'>About</NavLink>
-          <NavLink className='py-2 pl-6 border'  to='/contant'>Contact</NavLink>
+          <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/'>Home</NavLink>
+          <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/collection'>Collection</NavLink>
+          <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/about'>About</NavLink>
+          <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border'  to='/contant'>Contact</NavLink>
         </div>
       </div>
     </div>

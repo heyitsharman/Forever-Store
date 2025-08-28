@@ -1,4 +1,4 @@
-const { createContext } = require("react");
+import { createContext, useContext } from "react";
 import {products} from "../assets/assets";
 export const ShopContext = createContext();
 

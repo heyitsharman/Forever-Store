@@ -6,6 +6,7 @@ const SearchBar = () => {
     const {search,setSearch,showSearch,setShowSearch}= useContext(ShopContext);
      const location = useLocation();
      const [visible,setVisible] = useState(false);
+     
     useEffect(()=>{
       if(location.pathname.includes('collection')){
         setVisible(true);

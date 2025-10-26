@@ -3,7 +3,7 @@ import Title from '../components/Title';
 import CartTotal from '../components/CartTotal';
 import {assets} from '../assets/assets';
 import { ShopContext } from '../context/ShopContext';
-const Placeorder = () => {
+const PlaceOrder = () => {
 
 const [method,setMethod] = useState('cod');
 const {navigate} = useContext(ShopContext);
@@ -48,7 +48,7 @@ const {navigate} = useContext(ShopContext);
           <Title text1={'PAYMENT'} text2={'METHOD'}/>
           {/* payment methods */}
           <div className='flex gap-3 flex-col lg:flex-row'>
-            <div onClick={()=>setMethod('stripe')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+            <div onClick={()=>setMethod('stripe')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
               <p className={`min-w-3.5 h-3.5 border rounded-full  ${method==='stripe'?'bg-green-400': ''}`}></p>
               <img className='h-5 mx-4' src={assets.stripe_logo} alt="" />
             </div>
@@ -65,7 +65,7 @@ const {navigate} = useContext(ShopContext);
 
 
           <div className='w-full text-end mt-8'>
-            <button  onClick={()=>navigate('/orders')}className='bg-black text-white px-16 py-3 text-sm'>PLACE ORDER</button>
+            <button onClick={()=>navigate('/orders')} className='bg-black text-white px-16 py-3 text-sm'>PLACE ORDER</button>
           </div>
         </div>
       </div>
@@ -74,4 +74,4 @@ const {navigate} = useContext(ShopContext);
   )
 }
 
-export default Placeorder
+export default PlaceOrder

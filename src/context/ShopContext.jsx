@@ -152,7 +152,7 @@ useEffect(()=>{
         cartItems, addToCart,
         getCartCount,updateQuantity,
         getCartAmount, navigate, backendUrl,
-        setToken,token
+        setToken,token, setCartItems
     }
 
     return (
